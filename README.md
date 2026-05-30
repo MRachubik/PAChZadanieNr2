@@ -2,9 +2,9 @@
 
 ## TAGOWANIE I CACHE (Uzasadnienie)
 
-Obrazy na ghcr.io są tagowane unikalnym skrótem z Githuba (`sha-<skrot>`). Dzięki tej informacji wiadomo dokładnie, z jakiej wersji kodu powstał dany kontener. Pomaga to uniknąć przypadkowym nadpisaniu obrazu np. podczas używania tagu latest.
+Obrazy na ghcr.io są tagowane unikalnym skrótem z Githuba (`sha-<skrot>`). Dzięki tej informacji wiadomo dokładnie, z jakiej wersji kodu powstał dany kontener. Pomaga to uniknąć przypadkowego nadpisania obrazu np. podczas używania tagu latest.
 
-Warstwy Cache na DockerHubie są zapisywane z parametrem `mode=max`. Tryb ten eksportuje wszystkie warstwy budowania w tym etapów pośrednich z pliku Dockerfile. Każde kolejne uruchomienie potoku dzięki temu trwa krócej.
+Warstwy Cache na DockerHubie są zapisywane z parametrem `mode=max`. Tryb ten eksportuje wszystkie warstwy budowania, w tym etapów pośrednich z pliku Dockerfile. Każde kolejne uruchomienie potoku dzięki temu trwa krócej.
 
 # Wszystkie informacje: 
 ## Stworzenie lokalnego repozytorium
